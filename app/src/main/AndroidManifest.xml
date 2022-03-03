@@ -18,7 +18,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TexyReaderML1">
-        <activity android:name=".ImageLabelingActivity"></activity>
+        <activity android:name=".TranslateActivity"></activity>
+        <activity android:name=".ImageLabelingActivity" />
         <activity android:name=".ChooseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".CameraActivity" />
 
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
