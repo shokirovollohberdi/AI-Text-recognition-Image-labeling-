@@ -17,6 +17,7 @@ class ChooseActivity : AppCompatActivity() {
         camera = findViewById(R.id.btnCamera)
         labeling = findViewById(R.id.btnImageLabeling)
         trasn = findViewById(R.id.btnTranslateIntent)
+        var reply = findViewById<Button>(R.id.btnIntentSmartReply)
 
         storage.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
@@ -29,6 +30,9 @@ class ChooseActivity : AppCompatActivity() {
         }
         trasn.setOnClickListener {
             startActivity(Intent(this,TranslateActivity::class.java))
+        }
+        reply.setOnClickListener {
+            startActivity(Intent(this,ReplyActivity::class.java))
         }
     }
 }
